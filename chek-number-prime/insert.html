@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr = [7, 18, 17, 49, 66];
+
+    console.log(arr);
+
+    let value = parseInt(prompt("Enter the value = "));
+
+    let index = parseInt(prompt("Enter the index = "));
+
+    for (let i = (arr.length - 1); i >= 0; i--) {
+        if (i >= index) {
+            arr[i + 1] = arr[i];
+            if (i == index) {
+                arr[index] = value;
+            }
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
